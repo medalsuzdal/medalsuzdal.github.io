@@ -1,1 +1,0 @@
-# medalsuzdal.github.io
