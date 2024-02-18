@@ -2,6 +2,10 @@
     .navcontent {
         writing-mode: vertical-lr;
     }
+
+    .smaller-text {
+        font-size: 16px;
+    }
 }
 
 html {
