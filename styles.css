@@ -133,6 +133,5 @@ a:hover:not(#nav-icon) {
     margin: 0 auto;
     word-spacing: 10px;
     font-size: 13px;
-    width: 80%;
     max-width: 1200px;
 }
