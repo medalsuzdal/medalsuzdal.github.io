@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cecil's site (✿◠ᴗ◠)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <a href="#" id="nav-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </a>
+            <div class="navcontent">
+                <button class="nav-button"><a href="projects.html">projects</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        const menuButton = document.querySelector("a#nav-icon");
+        var nav = document.getElementById("nav")
+
+        function toggleNav() {
+            (nav.classList.contains("active")) ? nav
+                .classList.remove("active") : nav
+                .classList.add("active");
+        }
+
+        menuButton.addEventListener("click", function(e) {
+            e.preventDefault();
+            menuButton.classList.toggle("close");
+            toggleNav();
+        });
+    </script>
+
+    <main>
+        <h1>cecil [medalsuzdal] <span class="small-text">he/it · EN/<span style="font-size:smaller">한</span> OK!</span></h1>
+        <section>
+            <h2>projects</h2>
+            <p>coming soon!</p>
+        </section>
+    </main>
+
+    <section class="footer">
+        <a href="https://twitter.com/vbsluka">twitter</a> · <a href="https://calmethar.tumblr.com/">tumblr</a> · <a href="https://archiveofourown.org/users/akitoya">ao3</a> · <a href="https://github.com/medalsuzdal">github</a> · <a href="https://www.reddit.com/user/medalsuzdal">reddit</a> · <a href="https://goodreads.com/akitoya">goodreads</a>
+        <br>
+        <span class="back-arrow"><a href="index.html">&larr; back?</a></span>
+    </section>
+</body>
+</html>

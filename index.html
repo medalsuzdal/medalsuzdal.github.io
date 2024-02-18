@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cecil's site (✿◠ᴗ◠)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <a href="#" id="nav-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </a>
+            <div class="navcontent">
+                <button class="nav-button"><a href="projects.html">projects</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        const menuButton = document.querySelector("a#nav-icon");
+        var nav = document.getElementById("nav")
+
+        function toggleNav() {
+            (nav.classList.contains("active")) ? nav
+                .classList.remove("active") : nav
+                .classList.add("active");
+        }
+
+        menuButton.addEventListener("click", function(e) {
+            e.preventDefault();
+            menuButton.classList.toggle("close");
+            toggleNav();
+        });
+    </script>
+
+    <main>
+        <h1>cecil [medalsuzdal] <span class="small-text">he/it · EN/<span style="font-size:smaller">한</span> OK!</span></h1>
+        <section>
+            <h2>about</h2>
+            <p>
+                hello! i'm cecil; i am currently 19 years old and a sophomore in college. i am pursuing a bachelor's degree in psychology! i enjoy reading, writing, listening to music, playing video games, and researching about random new topics in my free time. i love cats, coffee, and books (in arbitrary order).
+                <br><br>
+                currently, i am a <u>head admin</u> and <u>moderation team lead</u> at <a href="https://discord.gg/ew8yz3h5at" target="_blank">furina mains</a>, and an <u>observer/admin</u> for <a href="https://teyvatcollective.network/" target="_blank">teyvat collective network</a>. i am also a <u>moderator</u> at <a href="https://discord.gg/vpmkANspMr" target="_blank">honkai: star rail unofficial</a>.
+                <br><br>
+                i write fanfiction on <a href="https://archiveofourown.org/users/akitoya" target="_blank">archive of our own</a>! i do not take writing commissions or requests. i do not consent to any of my writing being used for AI purposes, nor do i consent to my works being copypasted to other sites. 
+            </p>
+        </section>
+        <section>
+            <h2>contact</h2>
+            <p>
+                for the quickest response, you may directly message me on discord (@medalsuzdal). when you message me, please state your business outright, rather than trying to engage me in small talk beforehand; i will not accept casual conversation requests. do not send me a friend request; i will reject it immediately. 
+                <br><br>
+                i am fairly active on goodreads, where i write reviews on the books i read. you can check out my profile <a href="https://www.goodreads.com/medalsuzdal" target="_blank">here</a>.
+                <br><br>
+                you may email me for less urgent concerns at <span id="email">medalsuzdal@gmail.com</span>, though i do not check my email as often as i check discord.
+            </p>
+        </section>
+    </main>
+
+    <section class="footer">
+        <a href="https://twitter.com/vbsluka">twitter</a> · <a href="https://calmethar.tumblr.com/">tumblr</a> · <a href="https://archiveofourown.org/users/akitoya">ao3</a> · <a href="https://github.com/medalsuzdal">github</a> · <a href="https://www.reddit.com/user/medalsuzdal">reddit</a> · <a href="https://goodreads.com/akitoya">goodreads</a>
+    </section>
+</body>
+</html>
