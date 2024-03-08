@@ -8,77 +8,7 @@ body {
 }
 
 .small-text {
-    font-size: 16px;
-}
-
-nav {
-    z-index: 100;
-}
-
-.navcontent {
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    visibility: hidden;
-    pointer-events: none;
-    list-style: none;
-    width: 35px;
-    border-radius: 5px;
-}
-
-.nav-button {
-    letter-spacing: 2px;
-    padding: 0.75em 0;
-    writing-mode: vertical-lr;
-    background: transparent;
-    border: none;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: "Calibri", sans-serif;
-}
-
-nav.active .navcontent {
-    visibility: visible;
-    pointer-events: initial;
-    transition-delay: 0.2s;
-}
-
-#nav-icon {
-    float: right;
-}
-
-a#nav-icon {
-    display: inline-block;
-    padding: 10px;
-}
-
-a#nav-icon .bar {
-    margin: 5px;
-    width: 25px;
-    height: 3px;
-    background: #000;
-    border-radius: 1.5px;
-    transition: margin 0.2s, transform 0.2s;
-}
-
-a#nav-icon.close .bar:first-child {
-    -webkit-transform: translateY(8px) rotate(45deg);
-        -ms-transform: translateY(8px) rotate(45deg);
-            transform: translateY(8px) rotate(45deg);
-}
-
-a#nav-icon.close .bar:nth-child(2) {
-    opacity: 0;
-}
-
-a#nav-icon.close .bar:last-child {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-        -ms-transform: translateY(-8px) rotate(-45deg);
-            transform: translateY(-8px) rotate(-45deg);
-}
-
-.navbutton-content {
-    display: none;
+    font-size: 1rem;
 }
 
 main {
@@ -94,12 +24,13 @@ section {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 h2 {
     padding: 0;
     margin: 0;
+    font-size: 1.5rem;
 }
 
 p {
@@ -109,18 +40,24 @@ p {
     padding-left: 10px;
 }
 
-a:not(#nav-icon) {
+a {
     color: #555;
     text-decoration: none;
 }
 
-a:hover:not(#nav-icon) {
+a:hover {
     filter: blur(1px);
     transition: ease 0.5s;
 }
 
 #email {
     color: #555;
+}
+
+#email:hover {
+    background-color: #555;
+    color: #fff;
+    transition: ease-in-out 0.5s;
 }
 
 .back-arrow {
