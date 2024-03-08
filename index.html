@@ -7,42 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav id="nav">
-            <a href="#" id="nav-icon">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </a>
-            <div class="navcontent">
-                <button class="nav-button"><a href="projects.html">projects</a></button>
-            </div>
-        </nav>
-    </header>
-
-    <script>
-        const menuButton = document.querySelector("a#nav-icon");
-        var nav = document.getElementById("nav")
-
-        function toggleNav() {
-            (nav.classList.contains("active")) ? nav
-                .classList.remove("active") : nav
-                .classList.add("active");
-        }
-
-        menuButton.addEventListener("click", function(e) {
-            e.preventDefault();
-            menuButton.classList.toggle("close");
-            toggleNav();
-        });
-    </script>
 
     <main>
-        <h1>cecil [medalsuzdal] <span class="small-text">he/it · EN/<span style="font-size:smaller">한</span> OK!</span></h1>
+        <h1>cecil [medalsuzdal] <span class="small-text">he/it · EN/<span id="smaller-text" style="font-size:smaller">한</span> OK!</span></h1>
         <section>
             <h2>about</h2>
             <p>
-                hello! i'm cecil; i am currently 19 years old and a sophomore in college. i am pursuing a bachelor's degree in psychology! i enjoy reading, writing, listening to music, playing video games, and researching about random new topics in my free time. i love cats, coffee, and books (in arbitrary order).
+                hello! i'm cecil; i am 19 years old and i'm currently a sophomore in college. i am pursuing a bachelor's degree in psychology! i enjoy reading, writing, listening to music, playing video games, and researching about random new topics in my free time. i love cats, coffee, and books (in arbitrary order).
                 <br><br>
                 currently, i am a <u>head admin</u> and <u>moderation team lead</u> at <a href="https://discord.gg/ew8yz3h5at" target="_blank">furina mains</a>, and an <u>observer/admin</u> for <a href="https://teyvatcollective.network/" target="_blank">teyvat collective network</a>. i am also a <u>moderator</u> at <a href="https://discord.gg/vpmkANspMr" target="_blank">honkai: star rail unofficial</a>.
                 <br><br>
@@ -52,16 +23,16 @@
         <section>
             <h2>contact</h2>
             <p>
-                for the quickest response, you may directly message me on discord (@medalsuzdal). when you message me, please state your business outright, rather than trying to engage me in small talk beforehand; i will not accept casual conversation requests. do not send me a friend request; i will reject it immediately. 
+                for the quickest response, you may directly message me on discord (@medalsuzdal). when you message me, please state your business outright, rather than trying to engage me in small talk beforehand&mdash;i will not accept casual conversation requests. do not send me a friend request; i will reject it immediately. 
                 <br><br>
-                i am fairly active on goodreads, where i write reviews on the books i read. you can check out my profile <a href="https://www.goodreads.com/medalsuzdal" target="_blank">here</a>.
+                i rate and review any books i read on goodreads, where i primarily engage with the book-reading community. you can check out my profile <a href="https://www.goodreads.com/medalsuzdal" target="_blank">here</a>.
                 <br><br>
                 you may email me for less urgent concerns at <span id="email">medalsuzdal@gmail.com</span>, though i do not check my email as often as i check discord.
             </p>
         </section>
 
         <section class="footer">
-            <a href="https://twitter.com/vbsluka">twitter</a> · <a href="https://calmethar.tumblr.com/">tumblr</a> · <a href="https://archiveofourown.org/users/akitoya">ao3</a> · <a href="https://github.com/medalsuzdal">github</a> · <a href="https://www.reddit.com/user/medalsuzdal">reddit</a> · <a href="https://goodreads.com/medalsuzdal">goodreads</a>
+            <a href="https://twitter.com/vbsluka" target="_blank">twitter</a> · <a href="https://calmethar.tumblr.com/" target="_blank">tumblr</a> · <a href="https://archiveofourown.org/users/akitoya" target="_blank">ao3</a> · <a href="https://github.com/medalsuzdal" target="_blank">github</a> · <a href="https://www.reddit.com/user/medalsuzdal" target="_blank">reddit</a> · <a href="https://goodreads.com/medalsuzdal" target="_blank">goodreads</a>
         </section>
     </main>
 </body>
